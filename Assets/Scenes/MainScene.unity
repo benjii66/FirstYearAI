@@ -730,6 +730,7 @@ MonoBehaviour:
   movementSpeed: 2
   rotationSpeed: 1
   minDistance: 1
+  visionRange: 4.91
   damage: 100
   isHit: 0
   enemyZone: {fileID: 919132147984670853}

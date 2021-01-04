@@ -64,15 +64,29 @@ public class FAY_Enemy : MonoBehaviour
     //    }
     //}
 
+
+    void TestReach()
+    {
+       //target pos dans la visibility on chasse
+    }
+
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         HitPlayer();
     }
 
     private void OnDrawGizmos()
-    {
-        
+    {        
+        DrawEnemyToPlayer();
         DrawMinDistance();
+        DrawVisionRange();
+    }
+
+
+    void DrawVisionRange()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, visionRange);
     }
 
     void DrawMinDistance()
